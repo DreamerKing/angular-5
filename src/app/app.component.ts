@@ -8,8 +8,8 @@ import { Model, TodoItem } from './model';
 })
 
 export class AppComponent {
-  title = 'app';
-  model = new Model();
+title = "SPORTS STORE";
+ /*  model = new Model();
   getName() {
     return this.model.user;
   }
@@ -21,5 +21,5 @@ export class AppComponent {
     if (newItem  !=  "") {
       this.model.items.push(new TodoItem(newItem, false));
     }
-  }
+  } */
 }

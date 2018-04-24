@@ -13,7 +13,7 @@ export class Model {
 export class TodoItem {
     action;
     done;
-    constructor(actions, done){
+    constructor(actions, done) {
         this.action = actions;
         this.done = done;
     }
