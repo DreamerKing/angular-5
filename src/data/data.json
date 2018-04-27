@@ -1,42 +1,211 @@
 {
-    "products": [
-        {
-           "id": 1,
-            "name": "Kayak",
-            "category": "Waterspots",
-            "description": "A boat for one person",
-            "price": 275
-        }, {
-            "id": 2,
-            "name": "Lifejacket",
-            "category": "Waterspots",
-            "description": "Protective and fashionable",
-            "price": 48.45
-        }, {
-            "id": 3,
-            "name": "Soccer Ball",
-            "category": "Soccer",
-            "description": "FIFA-approved size and weight",
-            "price": 19.50
-        }, {
-           " id": 4,
-            "name": "Corner Flags",
-            "category": "Soccer",
-            "description": "Give your playing field a professional touch",
-            "price": 34.95
-        }, {
-            "id": 5,
-            "name": "Stadium",
-            "category": "Soccer",
-            "description": "Flat-packed 3500-selt stadium",
-            "price": 79500
-        }, {
-            "id": 6,
-            "name": "Thikthing Cap",
-            "category": "Chess",
-            "description": "Improving brain efficiency by 85%",
-            "price": 16
-        }
-    ],
-    "orders": []
+  "products": [
+    {
+      "id": 1,
+      "name": "Kayak",
+      "category": "Waterspots",
+      "description": "A boat for one person",
+      "price": 275
+    },
+    {
+      "id": 2,
+      "name": "Lifejacket",
+      "category": "Waterspots",
+      "description": "Protective and fashionable",
+      "price": 48.45
+    },
+    {
+      "id": 3,
+      "name": "Soccer Ball",
+      "category": "Soccer",
+      "description": "FIFA-approved size and weight",
+      "price": 19.5
+    },
+    {
+      " id": 4,
+      "name": "Corner Flags",
+      "category": "Soccer",
+      "description": "Give your playing field a professional touch",
+      "price": 34.95
+    },
+    {
+      "id": 5,
+      "name": "Stadium",
+      "category": "Soccer",
+      "description": "Flat-packed 3500-selt stadium",
+      "price": 79500
+    },
+    {
+      "id": 6,
+      "name": "Thikthing Cap",
+      "category": "Chess",
+      "description": "Improving brain efficiency by 85%",
+      "price": 16
+    }
+  ],
+  "orders": [
+    {
+      "cart": {
+        "lines": [
+          {
+            "product": {
+              "id": 1,
+              "name": "Kayak",
+              "category": "Waterspots",
+              "description": "A boat for one person",
+              "price": 275
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 2,
+              "name": "Lifejacket",
+              "category": "Waterspots",
+              "description": "Protective and fashionable",
+              "price": 48.45
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              " id": 4,
+              "name": "Corner Flags",
+              "category": "Soccer",
+              "description": "Give your playing field a professional touch",
+              "price": 34.95
+            },
+            "quantity": 4
+          },
+          {
+            "product": {
+              "id": 3,
+              "name": "Soccer Ball",
+              "category": "Soccer",
+              "description": "FIFA-approved size and weight",
+              "price": 19.5
+            },
+            "quantity": 1
+          }
+        ],
+        "itemCount": 7,
+        "cartPrice": 482.75
+      },
+      "shipped": false,
+      "name": "ssd",
+      "address": "sdfs",
+      "city": "sfs",
+      "state": "sdfds",
+      "zip": "sdfsd",
+      "country": "sfsdf",
+      "id": 1
+    },
+    {
+      "cart": {
+        "lines": [
+          {
+            "product": {
+              "id": 1,
+              "name": "Kayak",
+              "category": "Waterspots",
+              "description": "A boat for one person",
+              "price": 275
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 2,
+              "name": "Lifejacket",
+              "category": "Waterspots",
+              "description": "Protective and fashionable",
+              "price": 48.45
+            },
+            "quantity": 1
+          }
+        ],
+        "itemCount": 2,
+        "cartPrice": 323.45
+      },
+      "shipped": false,
+      "name": "ad",
+      "address": "ad",
+      "city": "ad",
+      "state": "ad",
+      "zip": "asd",
+      "country": "asdas",
+      "id": 2
+    },
+    {
+      "cart": {
+        "lines": [
+          {
+            "product": {
+              "id": 1,
+              "name": "Kayak",
+              "category": "Waterspots",
+              "description": "A boat for one person",
+              "price": 275
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 2,
+              "name": "Lifejacket",
+              "category": "Waterspots",
+              "description": "Protective and fashionable",
+              "price": 48.45
+            },
+            "quantity": 1
+          }
+        ],
+        "itemCount": 2,
+        "cartPrice": 323.45
+      },
+      "shipped": false,
+      "name": "wer",
+      "state": "werw",
+      "zip": "wer",
+      "country": "werwe",
+      "city": "werwe",
+      "id": 3
+    },
+    {
+      "cart": {
+        "lines": [
+          {
+            "product": {
+              "id": 1,
+              "name": "Kayak",
+              "category": "Waterspots",
+              "description": "A boat for one person",
+              "price": 275
+            },
+            "quantity": 1
+          },
+          {
+            "product": {
+              "id": 2,
+              "name": "Lifejacket",
+              "category": "Waterspots",
+              "description": "Protective and fashionable",
+              "price": 48.45
+            },
+            "quantity": 1
+          }
+        ],
+        "itemCount": 2,
+        "cartPrice": 323.45
+      },
+      "shipped": false,
+      "name": "qweq",
+      "address": "qwe",
+      "city": "qwe",
+      "state": "qwe",
+      "zip": "qwe",
+      "country": "qwreqw",
+      "id": 4
+    }
+  ]
 }
