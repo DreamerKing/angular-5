@@ -1,0 +1,35 @@
+<div class="form-check">
+  <label class="form-check-label"><input type="checkbox" class="form-check-input" [(ngModel)]="includeShipped"/>已购买订单</label>
+</div>
+<table class="table">
+  <thead>
+    <tr>
+      <th>名字</th>
+      <th>邮编</th>
+      <th>Cart</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+      <tr  *ngIf="getOrders().length == 0">
+          <td colspan="5">暂时还没有订单！</td>
+      </tr>
+      <ng-template ngFor let-o [ngForOf]="getOrders()">
+        <tr>
+          <td>{{o.name}}</td>
+          <td>{{o.zip}}</td>
+          <th>产品</th><th>数量</th>
+          <td>
+            <button class="btn btn-warning" (click)="markShipped(o)">Ship</button>
+            <button class="btn btn-danger" (click)="delete(o.id)">删除</button>
+          </td>
+        </tr>
+        <tr *ngFor="let line of o.cart.lines">
+          <td colspan="2"></td>
+          <td>{{line.product.name}}</td>
+          <td>{{line.quantity}}</td>
+        </tr>
+      </ng-template>
+  </tbody>
+</table>

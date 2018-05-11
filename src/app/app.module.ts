@@ -8,11 +8,9 @@ import { StoreComponent } from "./store/store.component";
 import { CartDetailComponent } from "./store/cartDetail.component";
 import { CheckoutComponent } from "./store/checkout.component";
 import { StoreFirstGuard } from "./storeFirst.guard";
-
 import { AppComponent } from "./app.component";
 
 @NgModule({
-  declarations: [ AppComponent ],
   imports: [
     BrowserModule,
     StoreModule,
@@ -29,7 +27,11 @@ import { AppComponent } from "./app.component";
         path: "checkout",
         component: CheckoutComponent,
        canActivate : [StoreFirstGuard],
-      }, {
+   },{
+     path: "admin",
+     loadChildren: "app/admin/admin.module#AdminModule",
+     canActivate: [ StoreFirstGuard]
+   },{
         path: "**",
         redirectTo: "/store"
       }
@@ -37,6 +39,7 @@ import { AppComponent } from "./app.component";
     FormsModule,
     NgbModule
   ],
+  declarations: [ AppComponent ],
   providers: [ StoreFirstGuard ],
   bootstrap: [ AppComponent ]
 })
