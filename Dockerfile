@@ -10,4 +10,4 @@ WORKDIR /usr/src/sportsstore
 RUN npm install
 EXPOSE 3000
 EXPOSE 3500
-CMD ["nmp", "start"]
+CMD ["npm", "start"]
