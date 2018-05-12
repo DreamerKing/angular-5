@@ -1,4 +1,4 @@
-FROM node: 8.9.1
+FROM node:8
 RUN mkdir -p /usr/src/sportsstore
 COPY dist /usr/src/sportsstore/app
 COPY middleware /usr/src/sportsstore/middleware
