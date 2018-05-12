@@ -1,5 +1,5 @@
 FROM node: 8.9.1
-RUN mkdir -p /user/src/sportsstore
+RUN mkdir -p /usr/src/sportsstore
 COPY dist /usr/src/sportsstore/app
 COPY middleware /usr/src/sportsstore/middleware
 COPY data /usr/src/sportsstore/data
