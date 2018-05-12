@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "start": "concurrently \"npm run express\" \"npm run json\" ",
-    "epxress": "node server.js",
+    "epress": "node server.js",
     "json": "json-server data/data.json -p 3500 -m middleware/authMiddleware.js"
   },
   "private": true,
